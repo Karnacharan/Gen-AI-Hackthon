@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Environment & Secrets
+.env
+.env.local
+
+# Generated local databases, vector indices & large raw survey files
+backend/data/nutrients.db
+backend/data/chroma_db/
+backend/data/nhanes/*.XPT
+data/nhanes/*.XPT
+
+# Optional local model weights
+models/*.pth
+backend/models/*.pth
+
+# Frontend dependencies & build output
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
